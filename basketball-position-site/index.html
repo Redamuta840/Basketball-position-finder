@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basketball Position Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🏀 Find Your Best Basketball Position</h1>
+    <form id="positionForm">
+      <label for="height">Height (cm):</label>
+      <input type="number" id="height" required>
+
+      <label for="skill">Main Skill:</label>
+      <select id="skill" required>
+        <option value="">--Select--</option>
+        <option value="shooting">Shooting</option>
+        <option value="passing">Passing</option>
+        <option value="defense">Defense</option>
+        <option value="dribbling">Dribbling</option>
+        <option value="rebounding">Rebounding</option>
+      </select>
+
+      <button type="submit">Find My Position</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>Your Position:</h2>
+      <p id="positionOutput"></p>
+      <h3>Recommended Drills:</h3>
+      <ul id="drillsList"></ul>
+      <img id="positionImage" alt="Position Image">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
